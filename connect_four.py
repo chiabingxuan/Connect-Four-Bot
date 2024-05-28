@@ -9,8 +9,8 @@ class ConnectFour(object):
         self.heights = [0 for col in range(num_cols)]
         self.available_columns = {col for col in range(self.num_cols)}
         self.current_player = first_player
-        self.player_1_char = "H"    # player 1 is the maximiser in minimax algorithm
-        self.player_2_char = "R"    # player 2 is the minimiser in minimax algorithm
+        self.player_1_char = "H"    # player 1 (human) is the maximiser in minimax algorithm
+        self.player_2_char = "R"    # player 2 (robot) is the minimiser in minimax algorithm
         self.empty_char = "_"
         self.winner = None
         self.num_counters_in_board = 0
@@ -608,9 +608,9 @@ if __name__ == '__main__':
         print("Invalid input!")
         human_start_first_str = input("Would you like to start first? Y/N: ").lower()
     if human_start_first_str == "y":
-        start_first = "1"
+        start_first = "1"       # human is player 1
     else:
-        start_first = "2"
+        start_first = "2"       # robot is player 2
     depth_of_search_str = input("Set the depth of search of the robot (Enter a positive integer less than 10): ")
     while True:
         try:

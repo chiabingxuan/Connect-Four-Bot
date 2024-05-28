@@ -185,7 +185,7 @@ class ConnectFour(object):
         if not self.winner:
             print("Game has ended in a draw")
         elif self.winner == "1":
-            print("Congratulations, you win!")
+            print("Congratulations, you won!")
             print("-------------------------")
         else:
             print("Sorry, you lost, better luck next time!")

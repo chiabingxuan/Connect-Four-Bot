@@ -9,7 +9,7 @@ git clone https://github.com/chiabingxuan/Connect-Four-Bot.git
 ```
 cd Connect-Four-Bot
 ```
-4. Run the game:
+3. Run the game:
 ```
 python connect_four.py
 ```
